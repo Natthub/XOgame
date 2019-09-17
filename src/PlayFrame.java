@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.MenuItem;
 import java.awt.event.ActionEvent;
@@ -63,6 +64,7 @@ public class PlayFrame extends JFrame{
 	void createButton() {
 		for (int j = 0; j < bXO.length; j++) {
 			bXO[j]=new JButton();
+			bXO[j].setFont(new Font("Tahoma", Font.BOLD, 100));
 			addMouseClicked(j);
 			add(bXO[j]);
 		}

@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -38,6 +39,7 @@ public class FirstFrame extends JFrame{
 		}
 		else if (player==2) {
 			PlayFrame2 pFrame2=new PlayFrame2();
+			pFrame2.setFont(new Font("Tahoma", Font.BOLD, 100));
 			pFrame2.setVisible(true);
 		}
 		
